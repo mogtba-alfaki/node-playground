@@ -8,7 +8,7 @@
 const cluster = require("cluster"); 
 const os  = require("os");  
 const http = require("http"); 
-const { factorialMyHugeArray } = require("./heavyCalculations");
+const { factorialMyHugeArray } = require("../heavyCalculations");
 
 if(cluster.isMaster) {  
     const cpuCores = os.cpus().length;  

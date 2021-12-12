@@ -9,7 +9,12 @@ exports.factorialMyHugeArray = (arraySize) => {
 } 
 
 
+exports.generateFebonacci = (number) => { 
+    if(number == 0) return 0; 
+    if(number ==1) return 1; 
 
+    return this.generateFebonacci(number -1) + this.generateFebonacci(number -2)
+}
 
 
 function createMyRandomArray(size) { 
@@ -31,4 +36,6 @@ function factorialize(num) {
       result *= num;
     } 
     return result; 
-  } 
+}
+
+
