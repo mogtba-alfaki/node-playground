@@ -1,2 +1,4 @@
 node_modules
 test.txt
+privateKey.pem 
+certification.pem

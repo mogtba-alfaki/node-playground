@@ -33,7 +33,10 @@ readableStream.on("error", (err) => {
     throw err; 
 })
 
-// piping the image from the readable stream to the transform for resizing and finaly to the writableStream 
+/*  
+    piping the image from the readable stream to the transform for resizing and  
+    finaly to the writableStream 
+ */
 
 readableStream.pipe(transform) 
 transform.pipe(writableStream); 

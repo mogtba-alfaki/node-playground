@@ -1,9 +1,13 @@
 const http = require("http") ;
-const {Worker, workerData, isMainThread} = require("worker_threads")
+const {Worker,  isMainThread} = require("worker_threads")
 
-const server = http.createServer((request, response) => { 
+
+
+const server = http.createServer((request, response) => {  
     switch(request.url) { 
-        case "/fast":  
+        case "/fast":   
+
+        console.log(request.connection.destroyed)
             response.end("1")
             console.log("fast response sent !")
             break; 
