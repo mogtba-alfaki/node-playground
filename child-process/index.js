@@ -22,10 +22,10 @@ const server = http.createServer((req, res) => {
             break; 
         default:  
             res.end(`
-                our  routes are:  
-                /fast -> for fast response 
-                /heavyTask -> for heavy task demo without child process 
-                /heavyTaskWithChildProcess -> for heavy task demo using child process
+                server routes are:  
+                1./fast -> for fast response 
+                2./heavyTask -> for heavy task demo without child process 
+                3. /heavyTaskWithChildProcess -> for heavy task demo using child process
             `)
     }
 });  

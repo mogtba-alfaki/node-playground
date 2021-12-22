@@ -5,7 +5,7 @@ exports.factorialMyHugeArray = (arraySize) => {
   for(let num of myArray) { 
       factorialize(num); 
   } 
-  return; 
+  return "calculation done"; 
 } 
 
 

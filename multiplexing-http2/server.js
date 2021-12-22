@@ -1,3 +1,4 @@
+
 const http2 = require("http2"); 
 const fs = require("fs"); 
 
@@ -8,8 +9,7 @@ const certificationData = {
 const server = http2.createSecureServer({ 
     "key": certificationData.privateKey, 
     "cert": certificationData.certification
-});  
- 
+});
  
 
 server.on("session", (session) => { 
@@ -31,9 +31,9 @@ server.on("stream", (stream, headers) => {
     }) 
 
     stream.end(response); 
-    server.close((err) => { 
-        console.log("connection closed ...")
-    })
+    // server.close((err) => { 
+    //     console.log("connection closed ...")
+    // })
 });  
 
 
