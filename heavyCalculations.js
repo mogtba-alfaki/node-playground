@@ -1,4 +1,6 @@
 
+// some random calculations to simulate cpu load . 
+
 
 exports.factorialMyHugeArray = (arraySize) => { 
   const myArray = createMyRandomArray(arraySize);  
