@@ -14,7 +14,7 @@ if(cluster.isMaster) {
     const cpuCores = os.cpus().length;  
     console.log(cpuCores); 
     for(let i = 0; i < cpuCores; i++) { 
-        cluster.fork(); 
+        cluster.fork();   
     } 
 } else { 
    http.createServer((request, response) => {  

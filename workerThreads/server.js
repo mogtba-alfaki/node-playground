@@ -18,7 +18,7 @@ const server = http.createServer((request, response) => {
                 console.log("message rescevied"); 
                 console.log("message from the thread: ", data)
                 response.end("1"); 
-            })  
+            });   
         
             worker.on("error", (err) => { 
                 throw err
